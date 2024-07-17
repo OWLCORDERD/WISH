@@ -12,7 +12,7 @@ const searchCurrentProduct = ({ params }: any) => {
 
   useEffect(() => {
     dispatch(currentSearchProduct(productId));
-  }, []);
+  }, [productId]);
 
   return (
     <div className='wrap'>
