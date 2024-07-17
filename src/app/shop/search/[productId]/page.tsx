@@ -11,7 +11,9 @@ const searchCurrentProduct = ({ params }: any) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(currentSearchProduct(productId));
+    if (productId !== undefined){
+      dispatch(currentSearchProduct(productId));
+    }
   }, [productId]);
 
   return (
