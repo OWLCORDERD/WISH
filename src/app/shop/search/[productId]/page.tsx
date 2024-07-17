@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import { currentSearchProduct } from "store/searchClothes";
 import { useAppDispatch } from "store/hooks";
 
-const searchCurrentProduct = ({ params }: any) => {
+const SearchCurrentProduct = ({ params }: any) => {
   const productId: string | undefined = params ? params.productId : undefined;
 
   const dispatch = useAppDispatch();
@@ -23,4 +23,4 @@ const searchCurrentProduct = ({ params }: any) => {
   );
 };
 
-export default searchCurrentProduct;
+export default SearchCurrentProduct;
