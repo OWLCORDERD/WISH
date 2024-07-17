@@ -6,7 +6,7 @@ import { currentSearchProduct } from "store/searchClothes";
 import { useAppDispatch } from "store/hooks";
 
 const searchCurrentProduct = ({ params }: any) => {
-  const productId: string = params ? params.productId : undefined;
+  const productId: string | undefined = params ? params.productId : undefined;
 
   const dispatch = useAppDispatch();
 
